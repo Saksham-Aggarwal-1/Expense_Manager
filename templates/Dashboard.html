@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .navbar-dark {
+  background-color: #512DA8; }
+
+        .jumbotron {
+  margin: 0px auto;
+  padding: 70px 30px;
+  background: #9575CD;
+  color: floralwhite; }
+
+  .modal-header{
+    background: #512DA8;
+    color: aliceblue;
+  }
+  .close{
+    color: aliceblue;
+  }
+
+  .modal-body{
+    background: #D1C4E9;
+ 
+  }
+  .row-header {
+  margin: 0px auto;
+  padding: 0px 0px; }
+  
+  .row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px; }
+    </style>
+ 
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <a class="navbar-brand" href="#">Expenses</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Transactions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                
+            </ul>
+            <span class="navbar-text">
+                <a data-toggle="modal" data-target="#loginModal">
+                    <i class="fa fa-sign-in" aria-hidden="true">
+                        <button type="button" class="btn btn-sm ml-auto" data-dismiss="modal" style="background: #9575CD;">Login</button>
+                    </i>
+                    
+                </a>
+            </span>
+        </div>
+    </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog model-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-sm ml-1" style="background: #9575CD;">Log in</button>        
+                        </div>
+                    </form>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header" >
+                <div class="col-12 col-sm-6">
+                    <h1>Expense Manager</h1>
+                    <p>We Manage Your Expenses</p>
+                </div>
+                    <div class="col-12 col-sm-6 align-self-center">
+                        <img src="https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/d4/00/ef/d400ef88-ab4e-3214-69b6-45a2014a9043/AppIcon-1x_U007emarketing-0-8-0-85-220.png/320x0w.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="" width="20%">
+                    </div>
+            </div>
+        </div>
+    </header>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
