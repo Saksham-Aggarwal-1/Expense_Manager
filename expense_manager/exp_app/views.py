@@ -4,7 +4,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect,HttpResponse
 
 def home(request):
-    return HttpResponse("no data")
+    return render(request,'exp_app/Dashboard.html')
 
 
 def signup(request):
